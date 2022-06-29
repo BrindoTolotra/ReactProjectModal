@@ -1,0 +1,74 @@
+body{
+    overflow: hidden;
+}
+
+
+.backShadowClose{
+    animation: closeAnimeBackShadow 500ms;
+}
+
+.w-48{
+    width: 48% !important;
+}
+
+
+.modal_board{
+    z-index: 1040 ;
+    opacity: 0;
+    animation: openAnimeModal 1s forwards;
+}
+
+.modal_board_close{
+    animation: closeAnimeModal 1s forwards;
+}
+
+
+@keyframes closeAnimeModal{
+    0%{
+        opacity: 1;
+        top: 50%;
+    }
+    100%{
+        opacity: 0;
+        top: 200%;
+    }
+}
+
+@keyframes openAnimeModal{
+    0%{
+        opacity: 0;
+        top: -100%;
+    }
+    100%{
+        opacity: 1;
+        top: 50%;
+    }
+}
+
+.center-absolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.relative-pos{
+    position: relative !important;
+}
+
+.ov-y{
+    overflow-y: scroll;
+}
+
+.h-75{
+    height: 75vh !important;
+}
+
+.pointer-cursor{
+    cursor: pointer;
+}
+
+/* 
+status = state 
+
+*/
